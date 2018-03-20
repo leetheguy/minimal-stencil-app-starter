@@ -1,16 +1,16 @@
 import { render } from '@stencil/core/testing';
-import { MyApp } from './my-app';
+import { AppIndex } from './app-index';
 
-describe('my-app', () => {
+describe('app-index', () => {
   it('should build', () => {
-    expect(new MyApp()).toBeTruthy();
+    expect(new AppIndex()).toBeTruthy();
   });
 
   describe('rendering', () => {
     beforeEach(async () => {
       await render({
-        components: [MyApp],
-        html: '<my-app></my-app>'
+        components: [AppIndex],
+        html: '<app-index></app-index>'
       });
     });
   });
